@@ -1,0 +1,27 @@
+/* Copyright 2022 sekpd */
+/* SPDX-License-Identifier: Apache-2.0 */
+.mod-tile {
+	text-decoration: none;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	width: min(30rem, 100%);
+	min-height: 15rem;
+	background-image: url('img/gss-tile.webp');
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.mod-tile:hover {
+	box-shadow: 0 0 0.75rem var(--theme-color-0);
+}
+
+.mod-tile span {
+	color: #fff;
+	text-align: end;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: normal;
+}
