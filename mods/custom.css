@@ -15,13 +15,14 @@
 }
 
 .mod-tile:hover {
-	box-shadow: 0 0 0.75rem var(--theme-color-0);
+	box-shadow: 0 0 1rem #000;
 }
 
 .mod-tile span {
 	color: #fff;
 	text-align: end;
-	font-size: 1.25rem;
+	text-shadow: 0 0 0.25rem #000;
+	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 1;
 }
