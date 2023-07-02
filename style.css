@@ -3,25 +3,9 @@
 @font-face {
 	font-family: 'IBM Plex Sans';
 	font-style: normal;
-	font-weight: 100;
-	font-display: swap;
-	src: url('/fonts/IBMPlexSans-Thin.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'IBM Plex Sans';
-	font-style: normal;
-	font-weight: 200;
-	font-display: swap;
-	src: url('/fonts/IBMPlexSans-ExtraLight.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'IBM Plex Sans';
-	font-style: normal;
 	font-weight: 300;
 	font-display: swap;
-	src: url('/fonts/IBMPlexSans-Light.woff2') format('woff2');
+	src: url('fonts/IBMPlexSans-Light.woff2') format('woff2');
 }
 
 @font-face {
@@ -29,7 +13,7 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url('/fonts/IBMPlexSans-Regular.woff2') format('woff2');
+	src: url('fonts/IBMPlexSans-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -37,7 +21,7 @@
 	font-style: normal;
 	font-weight: 500;
 	font-display: swap;
-	src: url('/fonts/IBMPlexSans-Medium.woff2') format('woff2');
+	src: url('fonts/IBMPlexSans-Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -45,7 +29,7 @@
 	font-style: normal;
 	font-weight: 600;
 	font-display: swap;
-	src: url('/fonts/IBMPlexSans-SemiBold.woff2') format('woff2');
+	src: url('fonts/IBMPlexSans-SemiBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -53,31 +37,32 @@
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
-	src: url('/fonts/IBMPlexSans-Bold.woff2') format('woff2');
+	src: url('fonts/IBMPlexSans-Bold.woff2') format('woff2');
 }
 
 :root {
-	--text-color: #fff;
-	--text-color-dim: #ddd;
 	--theme-color-1: #222;
 	--theme-color-2: #333;
 	--theme-color-3: #444;
 	--theme-color-4: #555;
+	--text-color: #fff;
+	--text-color-dim: #ddd;
 	--blue-1: #0af;
 	--blue-2: #0cf;
 }
 
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	border: 0;
 	font-family: 'IBM Plex Sans', sans-serif;
 	line-height: 1.5;
 }
 
 html {
-	background-color: var(--theme-color-1);
 	color: var(--text-color);
+	background-color: var(--theme-color-1);
 }
 
 h1,
@@ -87,7 +72,7 @@ h4,
 h5,
 h6 {
 	text-align: center;
-	line-height: normal;
+	line-height: 1.25;
 }
 
 a {
@@ -116,31 +101,31 @@ a:hover {
 }
 
 .navbar {
-	background-color: var(--theme-color-2);
 	position: sticky;
 	top: 0;
+	background-color: var(--theme-color-2);
 }
 
 .navbar nav {
-	margin: 0 auto;
-	padding: 1rem;
-	max-width: 80rem;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
 	gap: 0.5rem;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 0.75rem;
 }
 
 .navbar nav > a {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 0 0.5rem;
 	color: var(--text-color);
 	text-decoration: none;
 	font-size: 1.75rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 0 0.5rem;
 }
 
 .navbar nav > a:hover {
@@ -153,25 +138,24 @@ a:hover {
 }
 
 .list-block {
-	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
 	gap: 0.5rem;
+	list-style: none;
 }
 
 .list-block > li > * {
-	background-color: var(--theme-color-3);
-	color: var(--text-color);
-	text-decoration: none;
-	text-align: center;
-	padding: 0.5rem;
-	border-radius: 0.5rem;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	gap: 0.25rem;
+	color: var(--text-color);
+	background-color: var(--theme-color-3);
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	text-align: center;
+	text-decoration: none;
 }
 
 .list-block > li > *:hover {
@@ -179,14 +163,14 @@ a:hover {
 }
 
 .list-block > li > * > img {
-	height: 1.25rem;
+	height: 1.5rem;
 	border-radius: 0;
 }
 
 footer {
 	background-color: var(--theme-color-2);
+	padding: 0.75rem;
 	text-align: center;
-	padding: 1rem;
 }
 
 @media all and (max-width: 768px) {
@@ -209,19 +193,22 @@ footer {
 	}
 }
 
-/* content */
+/* Content */
 main {
-	margin: 0 auto;
-	padding: 1rem;
-	max-width: 75ch;
+	box-sizing: content-box;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	gap: 0.5rem;
+	max-width: 70ch;
+	margin: 0 auto;
+	padding: 0.75rem;
 }
 
-main img {
+main img,
+picture,
+svg,
+video {
 	display: block;
 	max-width: 100%;
 	border-radius: 0.5rem;
@@ -233,6 +220,6 @@ figure {
 }
 
 figcaption {
+	padding: 0.75rem;
 	text-align: center;
-	padding: 1rem;
 }
