@@ -1,43 +1,12 @@
-/* Copyright 2022 sekpd */
+/* Copyright 2023 sekpd */
 /* SPDX-License-Identifier: Apache-2.0 */
 @font-face {
-	font-family: 'IBM Plex Sans';
+	font-family: 'IBM Plex Sans Variable';
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 100 700;
+	font-stretch: 85% 100%;
 	font-display: swap;
-	src: url('fonts/IBMPlexSans-Light.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'IBM Plex Sans';
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: url('fonts/IBMPlexSans-Regular.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'IBM Plex Sans';
-	font-style: normal;
-	font-weight: 500;
-	font-display: swap;
-	src: url('fonts/IBMPlexSans-Medium.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'IBM Plex Sans';
-	font-style: normal;
-	font-weight: 600;
-	font-display: swap;
-	src: url('fonts/IBMPlexSans-SemiBold.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'IBM Plex Sans';
-	font-style: normal;
-	font-weight: 700;
-	font-display: swap;
-	src: url('fonts/IBMPlexSans-Bold.woff2') format('woff2');
+	src: url('fonts/IBMPlexSansVar-Roman.woff2') format('woff2-variations');
 }
 
 :root {
@@ -47,16 +16,18 @@
 	--theme-color-4: #555;
 	--text-color: #fff;
 	--text-color-dim: #ddd;
-	--blue-1: #0af;
-	--blue-2: #0cf;
+	--blue-1: #6cf;
+	--blue-2: #3bf;
 }
 
-* {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: 'IBM Plex Sans', sans-serif;
+	font-family: 'IBM Plex Sans Variable', sans-serif;
 	line-height: 1.5;
 }
 
@@ -86,14 +57,6 @@ a {
 
 a:hover {
 	color: var(--blue-2);
-}
-
-.link-text-color {
-	color: var(--text-color);
-}
-
-.link-text-color:hover {
-	color: var(--text-color-dim);
 }
 
 .text-center {
@@ -200,7 +163,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	gap: 0.5rem;
-	max-width: 70ch;
+	max-width: 75ch;
 	margin: 0 auto;
 	padding: 0.75rem;
 }

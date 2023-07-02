@@ -1,8 +1,10 @@
 {
 	"lang": "en",
 	"name": "sekpd",
+	"short_name": "sekpd",
 	"description": "sekpd's personal website",
-	"start_url": ".",
+	"start_url": "/",
+	"id": "/",
 	"theme_color": "#333",
 	"background_color": "#222",
 	"display": "standalone",
@@ -11,14 +13,12 @@
 		{
 			"src": "android-chrome-192x192.png",
 			"sizes": "192x192",
-			"type": "image/png",
-			"purpose": "maskable"
+			"type": "image/png"
 		},
 		{
 			"src": "android-chrome-512x512.png",
 			"sizes": "512x512",
-			"type": "image/png",
-			"purpose": "maskable"
+			"type": "image/png"
 		}
 	]
 }

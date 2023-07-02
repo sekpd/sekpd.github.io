@@ -1,4 +1,4 @@
-/* Copyright 2022 sekpd */
+/* Copyright 2023 sekpd */
 /* SPDX-License-Identifier: Apache-2.0 */
 .mod-tile {
 	display: flex;
@@ -15,7 +15,7 @@
 }
 
 .mod-tile:hover {
-	box-shadow: 0 0 1rem #000;
+	box-shadow: 0 0 0.5rem #000;
 }
 
 .mod-tile span {
