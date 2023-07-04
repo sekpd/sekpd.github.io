@@ -20,9 +20,7 @@
 	--blue-2: #3bf;
 }
 
-*,
-*::before,
-*::after {
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -48,10 +46,6 @@ h6 {
 
 a {
 	color: var(--blue-1);
-	text-decoration-line: underline;
-	text-decoration-style: solid;
-	text-decoration-thickness: 0.0625em;
-	text-underline-offset: 0.125em;
 	transition: all 200ms ease-out;
 }
 
