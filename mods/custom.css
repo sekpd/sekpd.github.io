@@ -6,7 +6,7 @@
 	align-items: flex-end;
 	width: min(30rem, 100%);
 	min-height: 15rem;
-	background-image: url('img/gss-tile.webp');
+	background-image: url("img/gss-tile.webp");
 	background-position: center;
 	background-size: cover;
 	padding: 1rem;

@@ -1,10 +1,10 @@
 /* Copyright 2023 sekpd */
 /* SPDX-License-Identifier: Apache-2.0 */
 .hero {
-	background-image: url('img/hero.webp');
+	background-image: url("img/hero.webp");
 	background-position: center;
 	background-size: cover;
-	padding: 12rem 1rem;
+	padding: 10rem 0.75rem;
 	text-shadow: 0 0 1rem #000;
 	font-size: 4rem;
 	font-weight: 300;
