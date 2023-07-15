@@ -19,14 +19,13 @@
 }
 
 :root {
-	--theme-color-1: #222;
-	--theme-color-2: #333;
-	--theme-color-3: #444;
-	--theme-color-4: #555;
+	--theme-color-1: #161616;
+	--theme-color-2: #262626;
+	--theme-color-3: #393939;
+	--theme-color-4: #525252;
 	--text-color: #fff;
-	--text-color-dim: #ddd;
-	--blue-1: #6cf;
-	--blue-2: #3bf;
+	--blue-1: #4589ff;
+	--blue-2: #78a9ff;
 	color: var(--text-color);
 	background-color: var(--theme-color-1);
 }
@@ -82,10 +81,6 @@ a:hover {
 	font-size: 1.75rem;
 }
 
-.navbar nav > a:hover {
-	color: var(--text-color-dim);
-}
-
 .navbar nav > a img {
 	height: 3rem;
 	border-radius: 0.5rem;
@@ -116,9 +111,9 @@ a:hover {
 	background-color: var(--theme-color-4);
 }
 
-.ul-blocks li > * img {
+.ul-blocks li > * svg {
 	height: 1.5rem;
-	border-radius: 0;
+	fill: var(--text-color);
 }
 
 footer {
@@ -139,10 +134,7 @@ main {
 	padding: 0.75rem;
 }
 
-main img,
-picture,
-svg,
-video {
+main img {
 	display: block;
 	max-width: 100%;
 	border-radius: 0.5rem;
@@ -156,6 +148,14 @@ figure {
 figcaption {
 	padding: 0.75rem;
 	text-align: center;
+}
+
+main .ul-blocks li > * {
+	background-color: var(--theme-color-2);
+}
+
+main .ul-blocks li > *:hover {
+	background-color: var(--theme-color-3);
 }
 
 /* Responsiveness */

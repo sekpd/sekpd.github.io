@@ -15,7 +15,7 @@
 }
 
 .mod-tile:hover {
-	box-shadow: 0 0 0.5rem #000;
+	filter: brightness(1.1) saturate(1.5);
 }
 
 .mod-tile span {

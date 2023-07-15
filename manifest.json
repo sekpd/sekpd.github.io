@@ -5,8 +5,8 @@
 	"description": "sekpd's personal website",
 	"scope": ".",
 	"start_url": "./",
-	"theme_color": "#333",
-	"background_color": "#222",
+	"theme_color": "#262626",
+	"background_color": "#161616",
 	"display": "standalone",
 	"orientation": "any",
 	"icons": [
