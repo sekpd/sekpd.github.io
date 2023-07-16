@@ -145,6 +145,10 @@ figure {
 	border-radius: 0.5rem;
 }
 
+figure img {
+	width: 100%;
+}
+
 figcaption {
 	padding: 0.75rem;
 	text-align: center;
