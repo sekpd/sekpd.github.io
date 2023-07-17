@@ -30,16 +30,6 @@
 	background-color: var(--theme-color-1);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	text-align: center;
-	line-height: 1.25;
-}
-
 a {
 	color: var(--blue-1);
 	transition: all 200ms ease-out;
@@ -47,6 +37,20 @@ a {
 
 a:hover {
 	color: var(--blue-2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.25;
+}
+
+ul,
+ol {
+	margin-left: 1.5rem;
 }
 
 .text-center {
@@ -92,6 +96,7 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	gap: 0.5rem;
+	margin: 0;
 	list-style: none;
 }
 
@@ -103,7 +108,6 @@ a:hover {
 	background-color: var(--theme-color-3);
 	padding: 0.5rem;
 	border-radius: 0.5rem;
-	text-align: center;
 	text-decoration: none;
 }
 
@@ -127,22 +131,23 @@ main {
 	box-sizing: content-box;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: start;
 	gap: 0.5rem;
 	max-width: 75ch;
 	margin: 0 auto;
 	padding: 0.75rem;
 }
 
-main img {
+main img,
+figure {
 	display: block;
+	align-self: center;
 	max-width: 100%;
 	border-radius: 0.5rem;
 }
 
 figure {
 	background-color: var(--theme-color-2);
-	border-radius: 0.5rem;
 }
 
 figure img {
@@ -152,6 +157,10 @@ figure img {
 figcaption {
 	padding: 0.75rem;
 	text-align: center;
+}
+
+main .ul-blocks {
+	justify-content: start;
 }
 
 main .ul-blocks li > * {

@@ -2,8 +2,8 @@
 /* SPDX-License-Identifier: Apache-2.0 */
 .mod-tile {
 	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
+	justify-content: end;
+	align-items: end;
 	width: min(30rem, 100%);
 	min-height: 15rem;
 	background-image: url("img/gss-tile.webp");
