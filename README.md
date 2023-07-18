@@ -1,6 +1,6 @@
 # My personal website
 
-This repository contains the source code and all the resources for my personal website.
+This repository contains all the source code and resources for my personal website.
 
 ## License
 
