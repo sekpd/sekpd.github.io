@@ -15,7 +15,7 @@
 }
 
 .mod-tile:hover {
-	filter: brightness(1.1) saturate(1.5);
+	filter: brightness(1.25) saturate(1.75);
 }
 
 .mod-tile span {
