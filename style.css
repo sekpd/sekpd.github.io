@@ -50,8 +50,7 @@ h6 {
 
 ul,
 ol {
-	margin-left: 0.75em;
-	list-style-position: inside;
+	padding-left: 1.25em;
 }
 
 .text-center {
@@ -139,25 +138,28 @@ main {
 	padding: 0.75rem;
 }
 
-main img,
-figure {
+main :is(img, figure) {
 	display: block;
 	align-self: center;
 	max-width: 100%;
 	border-radius: 0.5rem;
 }
 
-figure {
+main figure {
 	background-color: var(--theme-color-2);
 }
 
-figure img {
+main figure img {
 	width: 100%;
 }
 
-figcaption {
+main figcaption {
 	padding: 0.75rem;
 	text-align: center;
+}
+
+main :is(ul, ol) {
+	width: 100%;
 }
 
 main .ul-blocks {
