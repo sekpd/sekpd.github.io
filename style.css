@@ -48,8 +48,8 @@ h6 {
 	line-height: 1.25;
 }
 
-ul,
-ol {
+ol,
+ul {
 	padding-left: 1.25em;
 }
 
@@ -138,7 +138,7 @@ main {
 	padding: 0.75rem;
 }
 
-main :is(img, figure) {
+main :is(figure, img) {
 	display: block;
 	align-self: center;
 	max-width: 100%;
@@ -158,8 +158,12 @@ main figcaption {
 	text-align: center;
 }
 
-main :is(ul, ol) {
+main :is(ol, ul) {
 	width: 100%;
+}
+
+main :not(.ul-blocks) li:not(:last-child) {
+	margin-bottom: 0.25rem;
 }
 
 main .ul-blocks {
