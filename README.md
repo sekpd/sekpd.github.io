@@ -10,4 +10,4 @@ The content of this project itself is licensed under the [Creative Commons Attri
 
 * **Red Hat fonts**\
 Copyright 2021 Red Hat, Inc.\
-Licensed under the [SIL Open Font License, Version 1.1](fonts/red-hat/LICENSE), with Reserved Font Name Red Hat.
+Licensed under the [SIL Open Font License, Version 1.1](font/red-hat/LICENSE), with Reserved Font Name Red Hat.

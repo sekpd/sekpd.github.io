@@ -6,23 +6,19 @@
 	align-items: end;
 	width: min(30rem, 100%);
 	min-height: 15rem;
-	background-image: url("img/gss.webp");
-	background-position: center;
-	background-size: cover;
+	color: #fff;
+	background: url("img/gss.webp") center / cover;
 	padding: 0.75rem;
 	border-radius: 0.5rem;
-	text-decoration: none;
-}
-
-.mod-tile:hover {
-	filter: brightness(1.25) saturate(1.75);
-}
-
-.mod-tile span {
-	color: #fff;
 	text-align: end;
-	text-shadow: 0 0 0.25rem #000;
+	text-decoration: none;
+	text-shadow: #000 0 0 0.25em;
 	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 1;
+}
+
+.mod-tile:hover {
+	color: #fff;
+	filter: brightness(1.25) saturate(1.75);
 }
