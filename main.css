@@ -30,7 +30,7 @@
 
 a {
 	color: var(--blue-1);
-	text-decoration: underline 0.0625em solid;
+	text-decoration: underline 0.0625em;
 	text-underline-offset: 0.125em;
 	transition: all 250ms ease-out;
 }
