@@ -16,10 +16,10 @@
 
 :root {
 	--text-color: #fff;
-	--theme-color-1: #161616;
-	--theme-color-2: #262626;
-	--theme-color-3: #393939;
-	--theme-color-4: #525252;
+	--theme-color-1: #171414;
+	--theme-color-2: #272525;
+	--theme-color-3: #3c3838;
+	--theme-color-4: #565151;
 	--blue-1: #4589ff;
 	--blue-2: #78a9ff;
 	color: var(--text-color);

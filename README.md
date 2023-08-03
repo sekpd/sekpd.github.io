@@ -1,6 +1,6 @@
 # My personal website
 
-This repository contains all the source code and resources for my personal website.
+In this repository you can find all the source code and all the resources for my personal website.
 
 ## Licensing
 
@@ -8,6 +8,4 @@ The content of this project itself is licensed under the [Creative Commons Attri
 
 ### Third-party licenses
 
-* **Red Hat fonts**\
-Copyright 2021 Red Hat, Inc.\
-Licensed under the [SIL Open Font License, Version 1.1](font/red-hat/LICENSE), with Reserved Font Name Red Hat.
+* [**Red Hat fonts**](https://github.com/RedHatOfficial/RedHatFont) - [SIL Open Font License, Version 1.1](font/red-hat/LICENSE)
