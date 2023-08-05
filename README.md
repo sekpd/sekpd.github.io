@@ -8,4 +8,4 @@ The content of this project itself is licensed under the [Creative Commons Attri
 
 ### Third-party licenses
 
-* [**Red Hat fonts**](https://github.com/RedHatOfficial/RedHatFont) - [SIL Open Font License, Version 1.1](font/red-hat/LICENSE)
+* **[Red Hat fonts](https://github.com/RedHatOfficial/RedHatFont)** - [SIL Open Font License, Version 1.1](font/red-hat/LICENSE)
