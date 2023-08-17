@@ -4,6 +4,7 @@
 	color: #fff;
 	background: url("img/hero.webp") center / cover;
 	padding: 8rem 0.75rem;
+	text-align: center;
 	text-shadow: #000 0 0 0.25em;
 	font-size: 4rem;
 	font-weight: 300;
