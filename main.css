@@ -16,7 +16,7 @@
 	--blue-2: #78a9ff;
 	color: var(--text-color);
 	background-color: var(--theme-color-1);
-	font-family: ui-sans-serif, system-ui, sans-serif;
+	font-family: system-ui, sans-serif;
 	line-height: 1.5;
 }
 
