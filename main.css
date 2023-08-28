@@ -21,7 +21,7 @@
 
 a {
 	color: var(--blue-1);
-	transition: all 200ms ease-out;
+	transition: all 0.2s ease-out;
 }
 
 a:hover {
