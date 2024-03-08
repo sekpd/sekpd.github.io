@@ -21,7 +21,7 @@
 
 a {
 	color: var(--blue-1);
-	transition: all 0.2s ease-out;
+	transition: all 200ms ease-out;
 }
 
 a:hover {
@@ -42,6 +42,35 @@ ul {
 	padding-left: 2em;
 }
 
+.ul-blocks {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0;
+	list-style: none;
+}
+
+.ul-blocks li > * {
+	display: flex;
+	align-items: center;
+	gap: 0.375rem;
+	color: var(--text-color);
+	background-color: var(--theme-color-2);
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	text-decoration: none;
+}
+
+.ul-blocks li > *:hover {
+	background-color: var(--theme-color-3);
+}
+
+.ul-blocks li > * svg {
+	height: 1.5em;
+	fill: var(--text-color);
+}
+
 .navbar {
 	position: sticky;
 	top: 0;
@@ -55,45 +84,27 @@ ul {
 	align-items: center;
 	gap: 0.5rem;
 	max-width: 90rem;
-	margin: auto;
+	margin: 0 auto;
 	padding: 0.75rem;
 }
 
-.navbar nav > a {
+.navbar nav > a:first-of-type {
 	color: var(--text-color);
 	text-decoration: none;
 	font-size: 2rem;
 	line-height: 1.25;
 }
 
-.ul-blocks {
-	display: flex;
-	flex-wrap: wrap;
+.navbar .ul-blocks {
 	justify-content: center;
-	align-items: center;
-	gap: 0.5rem;
-	padding: 0;
-	list-style: none;
 }
 
-.ul-blocks li > * {
-	display: flex;
-	align-items: center;
-	gap: 0.375rem;
-	color: var(--text-color);
+.navbar .ul-blocks li > * {
 	background-color: var(--theme-color-3);
-	padding: 0.5rem;
-	border-radius: 0.5rem;
-	text-decoration: none;
 }
 
-.ul-blocks li > *:hover {
+.navbar .ul-blocks li > *:hover {
 	background-color: var(--theme-color-4);
-}
-
-.ul-blocks li > * svg {
-	height: 1.5em;
-	fill: var(--text-color);
 }
 
 footer {
@@ -114,9 +125,16 @@ main {
 	padding: 0.75rem;
 }
 
+main :is(ol, ul) {
+	width: 100%;
+}
+
+main :not(.ul-blocks) li:not(:last-child) {
+	margin-bottom: 0.25em;
+}
+
 main :is(figure, img) {
 	display: block;
-	align-self: center;
 	max-width: 100%;
 	border-radius: 0.5rem;
 }
@@ -126,35 +144,15 @@ main figure {
 }
 
 main figure img {
-	width: 100%;
+	min-width: 100%;
 }
 
 main figcaption {
 	padding: 0.75rem;
 }
 
-main :is(ol, ul) {
-	width: 100%;
-}
-
-main :not(.ul-blocks) li:not(:last-child) {
-	margin-bottom: 0.25em;
-}
-
-main .ul-blocks {
-	justify-content: start;
-}
-
-main .ul-blocks li > * {
-	background-color: var(--theme-color-2);
-}
-
-main .ul-blocks li > *:hover {
-	background-color: var(--theme-color-3);
-}
-
 /* Media queries */
-@media (max-width: 425px) {
+@media (max-width: 480px) {
 	.navbar {
 		position: static;
 	}
