@@ -121,7 +121,7 @@ main {
 	align-items: start;
 	gap: 0.625em;
 	max-width: 45rem;
-	margin: auto;
+	margin: 0 auto;
 	padding: 0.75rem;
 }
 
