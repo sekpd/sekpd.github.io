@@ -83,7 +83,7 @@ ul {
 	justify-content: space-between;
 	align-items: center;
 	gap: 0.5rem;
-	max-width: 90rem;
+	max-width: 80rem;
 	margin: 0 auto;
 	padding: 0.75rem;
 }
@@ -127,10 +127,6 @@ main {
 
 main :is(ol, ul) {
 	width: 100%;
-}
-
-main :not(.ul-blocks) li:not(:last-child) {
-	margin-bottom: 0.25em;
 }
 
 main :is(figure, img) {
