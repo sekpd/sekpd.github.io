@@ -20,5 +20,5 @@
 
 .mod-tile:hover {
 	color: #fff;
-	filter: brightness(1.25) saturate(1.75);
+	filter: brightness(1.25) saturate(1.5);
 }
