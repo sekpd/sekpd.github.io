@@ -75,6 +75,7 @@ ul {
 	position: sticky;
 	top: 0;
 	background-color: var(--theme-color-2);
+	z-index: 1;
 }
 
 .navbar nav {
