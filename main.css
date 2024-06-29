@@ -6,15 +6,15 @@
 }
 
 :root {
-	--text-color: #fff;
-	--theme-color-1: #171414;
-	--theme-color-2: #272525;
-	--theme-color-3: #3c3838;
-	--theme-color-4: #565151;
+	--fg-1: #fff;
+	--bg-1: #171414;
+	--bg-2: #272525;
+	--bg-3: #3c3838;
+	--bg-4: #565151;
 	--blue-1: #4589ff;
 	--blue-2: #78a9ff;
-	color: var(--text-color);
-	background-color: var(--theme-color-1);
+	color: var(--fg-1);
+	background-color: var(--bg-1);
 	font-family: system-ui, sans-serif;
 	line-height: 1.5;
 }
@@ -55,26 +55,26 @@ ul {
 	display: flex;
 	align-items: center;
 	gap: 0.375rem;
-	color: var(--text-color);
-	background-color: var(--theme-color-2);
+	color: var(--fg-1);
+	background-color: var(--bg-2);
 	padding: 0.5rem;
 	border-radius: 0.5rem;
 	text-decoration: none;
 }
 
 .btn-list li > *:hover {
-	background-color: var(--theme-color-3);
+	background-color: var(--bg-3);
 }
 
 .btn-list li > * svg {
 	height: 1.5em;
-	fill: var(--text-color);
+	fill: var(--fg-1);
 }
 
 .navbar {
 	position: sticky;
 	top: 0;
-	background-color: var(--theme-color-2);
+	background-color: var(--bg-2);
 	z-index: 1;
 }
 
@@ -90,9 +90,9 @@ ul {
 }
 
 .navbar nav > a:first-of-type {
-	color: var(--text-color);
+	color: var(--fg-1);
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: 2em;
 	line-height: 1.25;
 }
 
@@ -101,15 +101,15 @@ ul {
 }
 
 .navbar .btn-list li > * {
-	background-color: var(--theme-color-3);
+	background-color: var(--bg-3);
 }
 
 .navbar .btn-list li > *:hover {
-	background-color: var(--theme-color-4);
+	background-color: var(--bg-4);
 }
 
 footer {
-	background-color: var(--theme-color-2);
+	background-color: var(--bg-2);
 	padding: 0.75rem;
 	text-align: center;
 }
@@ -137,7 +137,7 @@ main :is(figure, img) {
 }
 
 main figure {
-	background-color: var(--theme-color-2);
+	background-color: var(--bg-2);
 }
 
 main figure img {

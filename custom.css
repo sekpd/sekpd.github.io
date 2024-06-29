@@ -1,10 +1,10 @@
 /* Copyright 2024 sekpd */
 /* SPDX-License-Identifier: Apache-2.0 */
 .hero {
-	background: linear-gradient(var(--theme-color-2), var(--theme-color-1));
+	background: linear-gradient(var(--bg-2), var(--bg-1));
 	padding: 8rem 0.75rem;
 	text-align: center;
-	font-size: 4rem;
+	font-size: 4em;
 	font-weight: 300;
 	line-height: 1;
 }
