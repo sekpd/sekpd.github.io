@@ -37,6 +37,11 @@ h6 {
 	line-height: 1.25;
 }
 
+img {
+	display: block;
+	max-width: 100%;
+}
+
 ol,
 ul {
 	padding-left: 2em;
@@ -126,22 +131,13 @@ main {
 	padding: 0.75rem;
 }
 
-main :is(ol, ul) {
-	width: 100%;
-}
-
-main :is(figure, img) {
-	display: block;
-	max-width: 100%;
+main figure,
+main img {
 	border-radius: 0.5rem;
 }
 
 main figure {
 	background-color: var(--bg-2);
-}
-
-main figure img {
-	min-width: 100%;
 }
 
 main figcaption {
