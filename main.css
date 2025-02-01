@@ -1,5 +1,7 @@
 /* Copyright 2024 sekpd */
 /* SPDX-License-Identifier: Apache-2.0 */
+
+/* General */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -17,6 +19,7 @@
 	background-color: var(--bg-1);
 	font-family: system-ui, sans-serif;
 	line-height: 1.5;
+	color-scheme: dark;
 }
 
 a {
@@ -26,6 +29,19 @@ a {
 
 a:hover {
 	color: var(--blue-2);
+}
+
+figure,
+img {
+	border-radius: 0.5rem;
+}
+
+figure {
+	background-color: var(--bg-2);
+}
+
+figcaption {
+	padding: 0.75rem;
 }
 
 img {
@@ -67,6 +83,7 @@ ul {
 	fill: var(--fg-1);
 }
 
+/* Content */
 .navbar {
 	position: sticky;
 	top: 0;
@@ -104,13 +121,6 @@ ul {
 	background-color: var(--bg-4);
 }
 
-footer {
-	background-color: var(--bg-2);
-	padding: 0.75rem;
-	text-align: center;
-}
-
-/* Content */
 main {
 	box-sizing: content-box;
 	display: flex;
@@ -121,17 +131,10 @@ main {
 	padding: 0.75rem;
 }
 
-main figure,
-main img {
-	border-radius: 0.5rem;
-}
-
-main figure {
+footer {
 	background-color: var(--bg-2);
-}
-
-main figcaption {
 	padding: 0.75rem;
+	text-align: center;
 }
 
 /* Media queries */
