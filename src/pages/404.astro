@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import MainContent from "../components/MainContent.astro";
+
+const title = "404";
+const description = "The requested file could not be found.";
+---
+
+<BaseLayout {title} {description}>
+    <MainContent>
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <a href="/">Go to the home page</a>
+    </MainContent>
+</BaseLayout>

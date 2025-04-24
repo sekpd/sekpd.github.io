@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import MainContent from "../components/MainContent.astro";
+import Screenshot from "../components/Screenshot.astro";
+
+const title = "Screenshots";
+
+const screenshots = [
+    "screenshot_2022-06-28_21-31-12.png",
+    "screenshot_2022-06-25_00-39-54.png",
+    "screenshot_2022-06-22_17-03-04.png",
+    "screenshot_2022-06-15_22-17-43.png",
+    "ibishu-etkcentre.png",
+    "screenshot_2022-06-14_21-49-32.png",
+    "screenshot_2022-06-05_14-31-28.png",
+    "astro-night.png",
+    "screenshot_2022-05-29_15-17-19.png",
+    "screenshot_2022-05-22_10-30-26.png",
+    "screenshot_2022-05-19_22-31-43.png",
+    "screenshot_2022-05-14_20-40-50.png",
+    "screenshot_2022-05-11_22-11-54.png",
+    "crown-victoria-utah.jpeg",
+    "screenshot_2022-05-05_16-20-42.png",
+    "screenshot_2022-05-01_22-37-05.png",
+    "screenshot_2022-05-01_22-32-34.png",
+    "screenshot_2022-05-01_15-23-34.png",
+    "screenshot_2022-05-01_15-20-36.png",
+    "picnic-cinematic.png",
+    "screenshot_2022-04-30_21-40-40.png",
+    "screenshot_2022-04-30_18-45-20.png",
+    "screenshot_2022-04-30_12-15-23.png",
+    "screenshot_2022-04-30_12-15-09.png",
+    "screenshot_2022-04-30_12-14-56.png",
+    "screenshot_2022-04-30_12-14-42.png",
+    "screenshot_2022-04-27_19-12-31.png",
+    "screenshot_2022-04-17_17-11-30.png",
+    "screenshot_2022-04-16_11-40-28.png",
+    "screenshot_2022-04-16_11-39-50.png",
+    "screenshot_2022-03-15_14-02-39.png",
+    "screenshot_2022-03-06_16-17-53.png",
+    "screenshot_2022-02-23_21-43-31.png",
+    "screenshot_2022-02-23_21-41-54.png",
+    "screenshot_2022-02-19_21-24-08.png",
+    "screenshot_2022-02-19_21-23-43.png",
+    "screenshot_2022-02-19_21-23-21.png",
+    "screenshot_2022-02-19_21-23-04.png",
+    "screenshot_2022-02-13_13-59-52.png",
+    "screenshot_2022-02-07_11-01-20.png",
+    "screenshot_2022-01-15_19-11-17.png",
+    "screenshot_2021-12-26_21-07-26.png",
+    "screenshot_2021-11-05_19-25-49.png",
+];
+---
+
+<BaseLayout
+    {title}
+    description="Here you can find some of my screenshots from games that I've played."
+>
+    <MainContent>
+        <h1>{title}</h1>
+        <p>
+            Here you can find some of my screenshots from games that I've played, sorted from newest
+            to oldest. Full quality images are available in
+            <a href="https://github.com/sekpd/sekpd.github.io/tree/main/src/assets/screenshots/">
+                this website's repository.
+            </a>
+        </p>
+        {
+            screenshots.map(filename => (
+                <Screenshot src={`/src/assets/screenshots/${filename}`} alt={filename} />
+            ))
+        }
+    </MainContent>
+</BaseLayout>

@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import MainContent from "../components/MainContent.astro";
+import UlButtons from "../components/UlButtons.astro";
+import ListLinkButton from "../components/ListLinkButton.astro";
+
+import MastodonLogo from "../assets/mastodon.svg";
+import GitHubLogo from "../assets/github.svg";
+import BeamNGLogo from "../assets/beamng.svg";
+import DiscordLogo from "../assets/discord.svg";
+---
+
+<BaseLayout>
+    <div
+        class="bg-linear-to-b from-neutral-900 to-neutral-950 px-4 py-32 text-center text-6xl font-light"
+    >
+        Hello, I'm sekpd
+    </div>
+    <MainContent>
+        <h1>About</h1>
+        <p>
+            I'm mainly interested in IT - system administration, networking and web development. I
+            like free and open-source software, and I try to use it instead of proprietary options
+            whenever possible. I'm also interested in digital privacy and software security.
+        </p>
+        <p>I'm a drummer and I enjoy listening to black, death and thrash metal.</p>
+        <p>
+            On this website you can find mods that I've made, some of my screenshots from games that
+            I've played and a few useful links.
+        </p>
+
+        <h2>Where you can find me</h2>
+        <UlButtons>
+            <ListLinkButton href="https://mastodon.social/@sekpd" rel="me">
+                <MastodonLogo class="h-6" />
+                Mastodon
+            </ListLinkButton>
+            <ListLinkButton href="https://github.com/sekpd">
+                <GitHubLogo class="h-6" />
+                GitHub
+            </ListLinkButton>
+            <ListLinkButton href="https://beamng.com/members/sekpd.461826/">
+                <BeamNGLogo class="h-6" />
+                BeamNG
+            </ListLinkButton>
+            <ListLinkButton href="https://discord.com/users/842636457448308747">
+                <DiscordLogo class="h-6" />
+                Discord (sekpd)
+            </ListLinkButton>
+        </UlButtons>
+    </MainContent>
+</BaseLayout>

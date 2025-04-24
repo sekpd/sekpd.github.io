@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+    a {
+        color: var(--color-blue-400);
+        text-decoration-line: underline;
+        transition-property: all;
+        transition-timing-function: var(--default-transition-timing-function);
+        transition-duration: var(--default-transition-duration);
+    }
+
+    a:hover {
+        color: var(--color-blue-300);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: var(--text-4xl);
+        line-height: var(--text-4xl--line-height);
+    }
+
+    h2 {
+        font-size: var(--text-2xl);
+        line-height: var(--text-2xl--line-height);
+    }
+
+    h3 {
+        font-size: var(--text-xl);
+        line-height: var(--text-xl--line-height);
+    }
+
+    h4,
+    h5,
+    h6 {
+        font-size: var(--text-lg);
+        line-height: var(--text-lg--line-height);
+    }
+
+    img {
+        border-radius: var(--radius-lg);
+    }
+
+    ol,
+    ul {
+        padding-left: --spacing(8);
+        list-style-type: disc;
+    }
+}

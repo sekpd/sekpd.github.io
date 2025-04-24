@@ -1,0 +1,16 @@
+---
+const { href, higher = false, ...rest } = Astro.props;
+---
+
+<li>
+    <a
+        {href}
+        class:list={[
+            "flex items-center gap-1.5 text-neutral-50 px-2.5 py-2 rounded-lg no-underline",
+            higher ? "bg-neutral-800 hover:bg-neutral-700" : "bg-neutral-900 hover:bg-neutral-800",
+        ]}
+        {...rest}
+    >
+        <slot />
+    </a>
+</li>

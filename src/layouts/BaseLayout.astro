@@ -1,0 +1,45 @@
+---
+import "../styles/global.css";
+import UlButtons from "../components/UlButtons.astro";
+import ListLinkButton from "../components/ListLinkButton.astro";
+
+const name = "sekpd";
+const { title, description = `${name}'s personal website` } = Astro.props;
+---
+
+<html lang="en" class="text-neutral-50 bg-neutral-950 scheme-dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="author" content={name} />
+        <meta name="description" content={description} />
+        <title>{title && `${title} | `}{name}</title>
+        <link rel="icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    </head>
+    <body>
+        <header class="sm:sticky top-0 bg-neutral-900 px-4 py-3">
+            <nav
+                class="flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4 max-w-7xl m-auto"
+            >
+                <a href="/" class="text-neutral-50 text-3xl no-underline">{name}</a>
+                <UlButtons center>
+                    <ListLinkButton href="/mods/" higher>Mods</ListLinkButton>
+                    <ListLinkButton href="/screenshots/" higher>Screenshots</ListLinkButton>
+                    <ListLinkButton href="/useful-links/" higher>Useful links</ListLinkButton>
+                </UlButtons>
+            </nav>
+        </header>
+        <slot />
+        <footer class="bg-neutral-900 p-4 text-center">
+            <p>Copyright {new Date().getUTCFullYear()} {name}</p>
+            <p>
+                Content available under
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">
+                    CC BY-SA 4.0
+                </a>
+            </p>
+            <a href="https://github.com/sekpd/sekpd.github.io">Source code</a>
+        </footer>
+    </body>
+</html>

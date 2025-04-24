@@ -1,0 +1,7 @@
+---
+const { center = false } = Astro.props;
+---
+
+<ul class:list={["flex flex-wrap items-center gap-2 p-0 list-none", center && "justify-center"]}>
+    <slot />
+</ul>

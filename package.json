@@ -1,0 +1,16 @@
+{
+    "name": "sekpd.github.io",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.1.4",
+        "astro": "^5.7.5",
+        "tailwindcss": "^4.1.4"
+    }
+}
