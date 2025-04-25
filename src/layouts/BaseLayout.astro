@@ -7,7 +7,7 @@ const name = "sekpd";
 const { title, description = `${name}'s personal website` } = Astro.props;
 ---
 
-<html lang="en" class="text-neutral-50 bg-neutral-950 scheme-dark">
+<html lang="en" class="text-neutral-100 bg-neutral-950 scheme-dark">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
@@ -20,9 +20,9 @@ const { title, description = `${name}'s personal website` } = Astro.props;
     <body>
         <header class="sm:sticky top-0 bg-neutral-900 px-4 py-3">
             <nav
-                class="flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4 max-w-7xl m-auto"
+                class="flex flex-col sm:flex-row justify-between items-center gap-3 max-w-7xl m-auto"
             >
-                <a href="/" class="text-neutral-50 text-3xl no-underline">{name}</a>
+                <a href="/" class="text-current text-3xl no-underline">{name}</a>
                 <UlButtons center>
                     <ListLinkButton href="/mods/" higher>Mods</ListLinkButton>
                     <ListLinkButton href="/screenshots/" higher>Screenshots</ListLinkButton>
