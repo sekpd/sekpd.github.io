@@ -5,18 +5,18 @@ import MainContent from "../components/MainContent.astro";
 const title = "Useful links";
 ---
 
-<BaseLayout {title} description="Here you can find a list of websites that I find useful.">
+<BaseLayout {title} description="Here you can find a list of links that I find useful.">
     <MainContent>
         <h1>{title}</h1>
         <p>
-            Here you can find a list of websites that I find useful, you might find some of them to
-            be worth bookmarking.
+            Here you can find a list of links that I find useful, you might find some of them to be
+            worth bookmarking.
         </p>
 
         <h2>Alternative front ends</h2>
         <p>
             Alternative front ends allow you to use a website or a service without it tracking you.
-            Since they are usually more lightweight than the official front ends, they make it
+            Since they're usually more lightweight than the official front ends, they make it
             possible for you to use them on older and less powerful devices. They can also be used
             as a way to customize the user experience.
         </p>
@@ -26,22 +26,35 @@ const title = "Useful links";
             <li>
                 <a href="https://piped.video">Piped</a>
                 -
-                <a href="https://github.com/TeamPiped/Piped/wiki/Instances">list of instances</a>
+                <a
+                    href="https://github.com/TeamPiped/documentation/blob/main/content/docs/public-instances/index.md"
+                >
+                    Instances
+                </a>
             </li>
             <li>
                 <a href="https://yewtu.be">Invidious</a>
                 -
-                <a href="https://docs.invidious.io/instances/">list of instances</a>
+                <a href="https://docs.invidious.io/instances/">Instances</a>
+            </li>
+        </ul>
+
+        <h3>Twitter/X</h3>
+        <ul>
+            <li>
+                <a href="https://nitter.net">Nitter</a>
+                -
+                <a href="https://github.com/zedeus/nitter/wiki/Instances">Instances</a>
             </li>
         </ul>
 
         <h3>Google Translate</h3>
         <ul>
             <li>
-                <a href="https://translate.plausibility.cloud">Lingva Translate</a>
+                <a href="https://lingva.ml">Lingva Translate</a>
                 -
                 <a href="https://github.com/thedaviddelta/lingva-translate#instances">
-                    list of instances
+                    Instances
                 </a>
             </li>
         </ul>
@@ -59,12 +72,12 @@ const title = "Useful links";
             <li>
                 <a href="https://send.vis.ee">Send</a>
                 -
-                <a href="https://github.com/timvisee/send-instances">list of instances</a>
+                <a href="https://github.com/timvisee/send-instances">Instances</a>
             </li>
             <li>
                 <a href="https://privatebin.net">PrivateBin</a>
                 -
-                <a href="https://privatebin.info/directory">list of instances</a>
+                <a href="https://privatebin.info/directory">Instances</a>
             </li>
             <li><a href="https://pixeldrain.com">pixeldrain</a></li>
         </ul>
@@ -73,7 +86,7 @@ const title = "Useful links";
         <ul>
             <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
             <li><a href="https://developers.google.com/speed/webp/docs/cwebp">cwebp</a></li>
-            <li><a href="https://ffmpeg.org/ffmpeg-all.html">FFmpeg</a></li>
+            <li><a href="https://ffmpeg.org/documentation.html">FFmpeg</a></li>
             <li><a href="https://github.com/yt-dlp/yt-dlp#readme">yt-dlp</a></li>
         </ul>
 
@@ -117,6 +130,7 @@ const title = "Useful links";
 
         <h2>Other</h2>
         <ul>
+            <li><a href="https://www.privacyguides.org/en/">Privacy Guides</a></li>
             <li>
                 <a href="https://github.com/pluja/awesome-privacy">Awesome Privacy by Pluja</a>
                 - list of services and alternatives that respect your privacy
